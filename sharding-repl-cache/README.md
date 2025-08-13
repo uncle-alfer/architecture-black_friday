@@ -1,4 +1,4 @@
-# pymongo-api
+# Sharding + Replication + Cache (Задание 4)
 
 ## Состав кластера
 - MongoDB config server — реплика-сет `configReplSet` из 1 ноды (порт 27017). На проде бы сделали несколько нод и для config-сервера
@@ -12,8 +12,6 @@
 
 ## Запуск
 ```bash
-# Запускать необходимо из папки sharding-repl-cache, чтобы использовать корректный compose
-cd sharding-repl-cache/
 # Если проблемы при повторном запуске, лучше очистить вольюмы
 # docker compose down -v
 docker compose up -d
